@@ -1,0 +1,130 @@
+create database raj_assignments;
+use raj_assignments;
+
+--Assignment 1-1(create table & insert values)
+create table shopping_history(
+product varchar not null,
+quantity integer not null,
+unit_price integer not null);
+select * from shopping_history;
+insert into shopping_history values('milk',5,25);
+insert into shopping_history values('bread',4,20);
+insert into shopping_history values('biscuits',15,10);
+insert into shopping_history values('milk',3,27);
+insert into shopping_history values('choclate',10,5);
+insert into shopping_history values('bread',10,25);
+insert into shopping_history values('eggs',20,6);
+insert into shopping_history values('choclate',15,10);
+insert into shopping_history values('milk',12,26);
+insert into shopping_history values('oil',5,50);
+
+--query for listing product and total amount spend on it arranged in descending order by product name(assignment 1-1)
+select product,sum(quantity*unit_price) as total_price 
+from shopping_history
+group by product 
+order by product desc;
+
+--Assignment 1-2a(create table & insert values)
+create table phones(
+name varchar(20) not null unique,
+phone_number integer not null unique);
+insert into phones values('Jack',1234),('Leena',3333),('Mark',9999),('Anna',7582);
+select * from phones;
+
+create table calls(
+id integer not null,
+caller integer not null,
+callee integer not null,
+duration integer not null,
+unique(id));
+insert into calls values(25,1234,7582,8),(7,9999,7582,1),(18,9999,3333,4),(2,7582,3333,3),(3,3333,1234,1),(21,3333,1234,1);
+select * from calls;
+
+--query to retrive name of persons who spent>=10 mins on call(assignment 1-2a)
+select phones.name,sum(calls.duration) as total_duration
+from phones
+join calls
+on phones.phone_number=calls.caller or phones.phone_number=calls.callee
+group by phones.name
+having total_duration>=10
+order by name;
+
+--Assignment 1-2b(create table & insert values)
+create table phones1(
+name string,
+phone_number integer);
+insert into phones1 values('John',6356),('Addison',4315),('Kate',8003),('Ginny',9831);
+select * from phones1;
+
+create table calls1(
+id integer,
+caller integer,
+callee integer,
+duration integer);
+insert into calls1 values(65,8003,9831,7),(100,9831,8003,3),(145,4315,9831,18);
+select * from calls1;
+
+--query to retrive name of persons who spent>=10 mins on call(assignment 1-2b)
+select phones1.name,sum(calls1.duration) as total_duration
+from phones1
+join calls1
+on phones1.phone_number=calls1.caller or phones1.phone_number=calls1.callee
+group by phones1.name
+having total_duration>=10
+order by name;
+
+
+--Assignment 1-3a((create table & insert values)
+create table transactions(
+amount integer not null,
+date date not null);
+insert into transactions values(1000,'2020-01-06'),(-10,'2020-01-14'),(-75,'2020-01-20'),(-5,'2020-01-25'),(-4,'2020-01-29'),
+(2000,'2020-03-10'),(-75,'2020-03-12'),(-20,'2020-03-15'),(40,'2020-03-15'),(-50,'2020-03-17'),(200,'2020-10-10'),(-200,'2020-10-10');
+select * from transactions;
+
+--query to retrive total balance of account including the fee for holding the credit card(assignment1-3a)
+Select ( sum(a.total) - (12- count(b.cnt ))*5 ) as result From  
+(Select sum(amount) as total, 'A' as name from  transactions ) as a  left join  
+(Select  count(amount) as cnt, 'A' as name
+From transactions 
+where amount <0 
+group by month(date) 
+having(count(amount)>=3 and sum(amount) >=100) ) as b 
+on a.name = b.name;
+
+----Assignment 1-3b((create table & insert values)
+create table transactions1(
+amount integer not null,
+date date not null);
+insert into transactions1 values(1,'2020-06-29'),(35,'2020-02-20'),(-50,'2020-02-03'),(-1,'2020-02-26'),(-200,'2020-08-01'),
+(-44,'2020-02-07'),(-5,'2020-02-25'),(1,'2020-06-29'),(1,'2020-06-29'),(-100,'2020-12-29'),(-100,'2020-12-30'),(-100,'2020-12-31');
+select * from transactions1;
+
+--query to retrive total balance of account including the fee for holding the credit card(assignment1-3b)
+select (sum(a.total)-(12-count(b.cnt))*5) as result from
+(select sum(amount) as total,'B' as name from transactions1) as a left join 
+(select count(amount) as cnt,'B'as name 
+from transactions1
+where amount<0
+group by month(date)
+having (sum(amount)>=100 and count(amount)>=3)) as b
+on a.name=b.name;
+
+----Assignment 1-3c((create table & insert values)
+create table transactions2(
+amount integer not null,
+date date not null);
+insert into transactions2 values(6000,'2020-04-03'),(5000,'2020-04-02'),(4000,'2020-04-01'),(3000,'2020-03-01'),(2000,'2020-02-01'),
+(1000,'2020-01-01');
+select * from transactions2;
+
+--query to retrive total balance of account including the fee for holding the credit card(assignment1-3b)
+select (sum(a.total)-(12-count(b.cnt))*5) as result from
+(select sum(amount) as total,'C' as name from transactions2) as a left join 
+(select count(amount) as cnt,'C'as name 
+from transactions2
+where amount<0
+group by month(date)
+having (sum(amount)>=100 and count(amount)>=3)) as b
+on a.name=b.name;
+
