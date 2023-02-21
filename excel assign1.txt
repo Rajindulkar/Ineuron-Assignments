@@ -1,0 +1,37 @@
+1)What do you mean by cells in an excel sheet?
+Cells are the rectangular-shaped boxes that you see in the grid of an excel worksheet.Each cell can be identified by a unique cell reference e.g:-"A1","C3","D6"
+
+2)How can you restrict someone from copying a cell from your worksheet?
+Go to the "Review" tab in the Excel ribbon and click on "Protect Sheet".
+then click the checkbox 'Protect worksheet and content of locked cells'
+enter password to unprotect sheet(optional).
+click ok to apply the protection.
+
+3)How to move or copy the worksheet into another workbook?
+Open both the source and destination workbooks in Excel.
+In the source workbook, right-click on the sheet tab for the worksheet you want to move or copy.
+Select "Move or Copy" from the context menu.
+In the Move or Copy dialog box, select the destination workbook from the "To book" dropdown menu.
+Choose whether you want to move or copy the worksheet using the "Move to end" or "Create a copy" option.
+Click "OK" to complete the move or copy operation.
+
+4)Which key is used as a shortcut for opening a new window document?
+The keyboard shortcut for opening a new Excel window document is "Ctrl + N" on Windows.
+
+5)What are the things that we can notice after opening the Excel interface?
+When you open the Excel interface, you will see a spreadsheet application that is designed for organizing, manipulating, and analyzing data. 
+Here are some of the key things that you may notice after opening Excel:
+1-A grid of cells: The main area of the Excel interface is a grid of cells that are arranged in rows and columns. Each cell has a unique cell reference, 
+which is identified by a combination of a letter and a number, such as A1, B2, C3, and so on.
+2-A ribbon: At the top of the Excel interface, you will see a ribbon that contains tabs and groups of commands. 
+The tabs are organized by activity, such as "Home," "Insert," "Page Layout," "Formulas," "Data," and "Review."
+3-A formula bar: Above the grid of cells, you will see a formula bar that displays the contents of the active cell,including any data,formula,or function that has been entered.
+4-Status bar: At the bottom of the Excel interface, you will see a status bar that displays information about the current worksheet, such as the current cell mode, the zoom level, 
+and the calculation status.
+5-Name box: The name box is located next to the formula bar, and it displays the name of the current cell or range of cells.
+6-Quick Access Toolbar: This is a customizable toolbar that appears above the ribbon, and it allows you to access frequently used commands quickly.
+
+6)When to use a relative cell reference in excel?
+Relative cell reference is used when you want the formula to refer to a cell relative to the location of the cell that contains the formula.
+eg:-For example, suppose you have a formula in cell B2 that multiplies the value in cell A2 by 2, and you want to copy the formula to cell B3. 
+If you use a relative cell reference in the formula, such as "=A22", then when you copy the formula to cell B3, the formula will automatically adjust to "=A32", which refers to the cell one row below the original cell.
