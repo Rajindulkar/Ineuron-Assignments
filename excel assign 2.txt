@@ -1,0 +1,45 @@
+1)What does the dollar($) sign do?
+In Excel, the dollar sign ($) is used to create an absolute cell reference in a formula.An absolute cell reference refers to a specific cell in a worksheet, 
+regardless of where the formula is copied or moved. 
+
+2)How to Change the Reference from Relative to Absolute (or Mixed)?
+You can change a cell reference in Excel from relative to absolute (or mixed) by adding dollar signs ($) before the column letter, the row number, 
+or both, depending on the type of reference you want to create. 
+
+3)Explain the order of operations in excel?
+The order of operations in Excel determines the sequence in which calculations are performed in a formula.
+Excel follows a specific order of operations to ensure that calculations are performed in the correct order, regardless of the complexity of the formula. 
+The order of operations in Excel is as follows:
+Parentheses,Exponents,Multiplication and Division,Addition and Subtraction.
+For example, consider the following formula: =13+5*3^2/(12+4)=13+5*3^2/16=13+5*9/16=13+45/16=57/16=3.56
+
+4)What, according to you, are the top 5 functions in excel and write a basic syntax for any of two?
+1-SUM: Adds the values of one or more cells.
+Syntax: =SUM(number1,[number2],...)
+2-AVERAGE: Calculates the average of the values in a range of cells.
+Syntax: =AVERAGE(number1,[number2],...)
+3-IF: Tests a condition and returns one value if the condition is true, and another value if the condition is false.
+Syntax: =IF(logical_test,value_if_true,value_if_false)
+4-VLOOKUP: Searches for a value in the first column of a table, and returns a value in the same row from a specified column.
+Syntax: =VLOOKUP(lookup_value,table_array,col_index_num,range_lookup)
+5-CONCATENATE: Joins two or more text strings into one string.
+Syntax: =CONCATENATE(text1,[text2],...)
+
+5)When would you use the subtotal function?
+The SUBTOTAL function in Excel is useful for calculating subtotals for a range of data. 
+The SUBTOTAL function is especially useful when working with large data sets or databases, where you need to analyze specific portions of the data. 
+It can be used to calculate the subtotal for each group within the data, or for specific columns within a table.
+For example, suppose you have a large data set that contains sales figures for various regions and products, and you want to calculate the total sales for each region. 
+You can use the SUBTOTAL function to calculate the subtotal for each region. The function can ignore any hidden or filtered rows, which makes it easier to get accurate results.
+
+Here is an example of the syntax for the SUBTOTAL function:
+=SUBTOTAL(function_num, ref1, [ref2], ...)
+
+6)What is the syntax of the vlookup function? Explain the terms in it?
+The syntax of the VLOOKUP function in Excel is as follows:
+=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+where;lookup_value: This is the value that you want to look up in the leftmost column of the table.
+table_array: This is the range of cells that contains the data you want to look up.
+col_index_num: This is the column number in the table_array that contains the data you want to retrieve. 
+range_lookup: This is an optional argument that indicates whether you want an exact match or an approximate match for the lookup_value. 
+
