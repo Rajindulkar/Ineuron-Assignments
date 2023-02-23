@@ -1,0 +1,58 @@
+1)What do you mean by BI? Explain.
+BI stands for Business Intelligence. It refers to the use of software and tools to analyze data and extract insights that can inform business decisions. 
+The main objective of BI is to transform raw data into actionable insights that can help organizations make better decisions and improve their performance.
+BI involves the collection, integration, analysis, and visualization of data from various sources, including databases, spreadsheets, and other data repositories. 
+BI tools such as Power BI, Tableau, and QlikView allow users to extract and analyze data using interactive dashboards and reports, providing an easy-to-understand visual representation of complex data.
+Business Intelligence is used by organizations across various industries to gain a competitive edge, improve efficiency, reduce costs, and increase revenue. 
+BI can be used to analyze sales data, customer behavior, financial data, and operational data, among others.
+Overall, BI is an essential component of modern business operations, providing valuable insights that can help organizations make data-driven decisions and achieve their strategic objectives.
+
+2)How Power-BI helps in BI, and how does it help Analysts? Explain.
+Power BI is a powerful business intelligence tool that helps in BI in several ways:
+Data Integration: Power BI can connect to various data sources such as databases, spreadsheets, and cloud services etc.
+Data Modeling: Power BI enables users to build data models using data from multiple sources, making it easier to analyze and visualize data.
+Data Analysis: Power BI allows users to analyze large datasets using advanced analytics capabilities such as statistical analysis and data mining.
+Data Visualization: Power BI provides a range of interactive visualization options such as charts, graphs, and maps, making it easier to communicate insights to stakeholders.
+Collaboration: Power BI allows users to collaborate with others and share reports and dashboards securely, enabling teamwork and facilitating knowledge sharing.
+
+Power BI also helps analysts in several ways:
+Faster Analysis: Power BI enables analysts to perform data analysis and visualization faster than traditional methods, saving time and improving efficiency.
+Better Insights: Power BI provides analysts with valuable insights into business performance and trends, enabling them to identify opportunities and risks.
+Enhanced Reporting: Power BI enables analysts to create customized reports and dashboards that provide a comprehensive view of business performance, making it easier to communicate insights to stakeholders.
+Improved Decision-Making: Power BI helps analysts to make data-driven decisions based on real-time insights, enabling organizations to respond quickly to changes in the business environment.
+
+3)Explain Descriptive analytics?
+Descriptive analytics is a type of analytics that focuses on the analysis and interpretation of historical data to understand what has happened in the past.
+Descriptive analytics involves the use of statistical techniques such as mean, median, mode, standard deviation, and variance to understand the data. 
+
+Some common examples of descriptive analytics include:
+Sales Analysis: Analyzing historical sales data to understand trends, patterns, and seasonality in sales performance.
+Customer Analysis: Analyzing customer data to understand customer demographics, behavior, and preferences.
+
+4)Explain Predictive analytics?
+Predictive analytics is a type of analytics that uses statistical and machine learning algorithms to analyze historical data and identify patterns and relationships that can be used to predict future outcomes.
+Predictive analytics uses data, statistical algorithms, and machine learning models to analyze historical data and make predictions about future events or trends. The process involves several steps, including:
+
+Data Collection: Collecting relevant data from various sources, such as databases, spreadsheets, and cloud services.
+Data Cleaning and Preparation: Cleaning and processing the data to remove any inconsistencies or errors that may affect the accuracy of the analysis.
+Data Analysis: Analyzing the data using statistical and machine learning algorithms to identify patterns and relationships that can be used to make predictions.
+Model Building: Creating predictive models using the data and algorithms that best fit the analysis.
+Validation and Deployment: Validating the model's accuracy using testing data and deploying the model in a production environment.
+
+5)Explain perspective analytics?
+Prescriptive analytics is an advanced form of analytics that leverages historical and real-time data, mathematical algorithms, and artificial intelligence (AI) to recommend or prescribe the best course of action for a specific situation. 
+It provides organizations with insights into not only what is likely to happen in the future, but also what actions should be taken to achieve the desired outcome.
+
+The process of prescriptive analytics involves several steps:
+Data Collection: Collecting relevant data from various sources, such as databases, sensors, and customer feedback.
+Data Cleaning and Preparation: Cleaning and processing the data to remove any inconsistencies or errors that may affect the accuracy of the analysis.
+Data Analysis: Analyzing the data using mathematical algorithms and AI techniques to identify patterns and relationships.
+Model Building: Creating a prescriptive model that recommends the best course of action based on the analysis.
+Validation and Deployment: Validating the model's accuracy using testing data and deploying the model in a production environment.
+
+6)Write five real-life questions that PowerBi can solve.
+What are the sales trends for a specific product or service over a specific time period?
+Which marketing campaign has the highest return on investment (ROI)?
+What are the top-selling products by region, store, or customer segment?
+How are website visitors interacting with our website, and what changes can we make to improve engagement and conversion rates?
+Which employees are the most productive, and how can we identify and replicate their best practices across the organization?
