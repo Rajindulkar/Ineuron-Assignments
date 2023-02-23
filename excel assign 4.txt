@@ -1,0 +1,41 @@
+1)To use the ribbon commands, what menu and grouping of commands will you find the Insert and Delete command?
+In the Excel ribbon, you can find the Insert and Delete commands in the "Cells" group of the "Home" tab.
+
+2)If you set a row height or column width to 0 (zero), what happens to the row and column?
+If you set the row height or column width in Excel to 0 (zero), the row or column will be hidden from view, but it will still exist in the worksheet.
+
+3)Is there a need to change the height and width in a cell? Why?
+Yes, there can be a need to change the height and width of cells in Excel.
+Changing the height of a row can be useful when you have text that contains multiple lines in a cell, or when you have data that is too large to fit 
+in a single cell. By increasing the height of the row, you can ensure that all of the data in the cell is visible.Simillarly,
+Changing the width of a column can be useful when you have data that is too wide to fit in a single cell. By increasing the width of the column, 
+you can ensure that all of the data in the cell is visible.
+
+4)What is the keyboard shortcut to unhide rows?
+Select the rows above and below the hidden rows.(eg- row 4 & row6)
+Press and hold the Shift key, then press the number key of the row you want to unhide.(eg- row 5)
+Release the Shift key.
+
+5)How to hide rows containing blank cells?
+Select the data range where you want to hide rows with blank cells.
+Click on the "Filter" button on the "Data" tab in the ribbon.
+Click on the drop-down arrow in the column header of the column that may contain blank cells.
+In the filter drop-down menu, uncheck the checkbox next to "Blanks". This will hide all the rows containing blank cells in that column.
+
+6)What are the steps to hide the duplicate values using conditional formatting in excel?
+Select the range of cells that you want to check for duplicates.
+Click on the "Conditional Formatting" button on the "Home" tab in the ribbon.
+Choose "Highlight Cells Rules" from the drop-down menu, then click "Duplicate Values".
+In the "Duplicate Values" dialog box, select "Duplicate" from the first drop-down list, and then choose a formatting style from the second drop-down list. This will highlight the duplicate values in the selected range.
+Click OK to close the dialog box and apply the formatting.
+Now, select the entire range again and click on the "Conditional Formatting" button again.
+This time, choose "New Rule" from the drop-down menu.
+In the "New Formatting Rule" dialog box, select "Use a formula to determine which cells to format".
+In the "Format values where this formula is true" field, enter the formula "=COUNTIF($A$1:$A$10,A1)>1" (assuming that your data range is A1:A10). This formula counts the number of times each value appears in the range, and formats the cells where the count is greater than 1.
+Choose a formatting style for the cells where the formula returns "TRUE".
+Click OK to close the dialog box and apply the formatting.
+
+
+
+
+
