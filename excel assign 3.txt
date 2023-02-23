@@ -1,0 +1,32 @@
+1)How and when to use the AutoSum command in excel?
+The AutoSum command in Excel is a quick and easy way to add up a range of numbers in a column or row.
+
+To use the AutoSum command, follow these steps:
+
+Click on an empty cell where you want the sum to appear.
+Click on the "AutoSum (∑)" button in the "Editing" group on the "Home" tab. 
+click and drag over the range of cells to sum up to adjust the formula, and then press "Enter" to confirm.
+
+2)What is the shortcut key to perform AutoSum?
+'Alt + =' is the shortcut key to perform autosum.
+
+3)How do you get rid of Formula that omits adjacent cells?
+If you have a formula in Excel that omits adjacent cells that you want to include,you can modify the formula to include those cells by adjusting the 
+range of cells that the formula references.
+
+Click on the cell containing the formula that you want to modify.
+Click on the formula bar at the top of the Excel window to edit the formula.
+Adjust the range of cells in the formula to include the cells you want to include. For example, if your original formula was =SUM(A1:A8), and you want to include cell A9 in the sum, change the formula to =SUM(A1:A9).
+Press "Enter" to confirm the new formula.
+
+4)How do you select non-adjacent cells in Excel 2016?
+Click on the first cell or range of cells that you want to select.
+Hold down the "Ctrl" key on your keyboard.
+Click on any additional cells or ranges of cells that you want to select. You can click and drag over a range of cells to select them, or click on individual cells to add them to the selection.
+Release the "Ctrl" key when you have selected all the cells you need.
+
+5)What happens if you choose a column, hold down the Alt key and press the letters ocw in quick succession?
+If you choose a column in Excel, hold down the Alt key, and press the letters "ocw" in quick succession, it will hide the selected column.
+
+6)If you right-click on a row reference number and click on Insert, where will the row be added?
+If you right-click on a row reference number in Excel and click on "Insert," the new row will be inserted above the row that you right-clicked on.
