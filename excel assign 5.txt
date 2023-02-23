@@ -1,0 +1,40 @@
+1)How many types of conditions are available in conditional formatting on Excel?
+Cell Value: You can format cells based on their value, such as if the value is greater than a certain number or if the value is a specific text string.
+Formula: You can use a formula to determine the formatting, such as if a cell is blank or if the result of a formula meets a certain condition.
+Color Scale: You can use a color scale to format cells based on their value in relation to other cells in the same range.
+Data Bars: You can use data bars to create a horizontal bar chart within a cell to represent the value of the cell.
+Icon Sets: You can use icon sets to add icons, such as arrows or check marks, to cells based on their value.
+Top/Bottom Rules: You can use top/bottom rules to format cells that meet a certain condition, such as the top 10 values in a range or the bottom 5 values.
+Unique/Duplicate: You can use conditional formatting to highlight cells that contain unique or duplicate values within a range.
+
+2)How to insert border in Excel with Format Cells dialog?
+Select the cells or range of cells that you want to apply the border to.
+Right-click on the selection and choose "Format Cells" from the context menu, or click on the "Home" tab in the ribbon, and then click on the "Format Cells" button in the "Cells" group.
+In the "Format Cells" dialog box, click on the "Border" tab.
+
+3)How to Format Numbers as Currency in Excel?
+Select the cells or range of cells that you want to format.
+Right-click on the selection and choose "Format Cells" from the context menu, or click on the "Home" tab in the ribbon, and then click on the "Number Format" dropdown in the "Number" group and choose "More Number Formats".
+In the "Format Cells" dialog box, select the "Currency" category.
+Choose the currency symbol you want to use from the "Symbol" dropdown.
+
+4)What are the steps to format numbers in Excel with the Percent style?
+Select the cells or range of cells that you want to format.
+Right-click on the selection and choose "Format Cells" from the context menu, or click on the "Home" tab in the ribbon, and then click on the "Number Format" dropdown in the "Number" group and choose "More Number Formats".
+In the "Format Cells" dialog box, select the "Percentage" category.
+
+
+5)What is a shortcut to merge two or more cells in excel?
+The shortcut to merge two or more cells in Excel is Alt + H + M + M. This will merge the selected cells into one cell.
+
+6)How do you use text commands in Excel?
+In Excel, text commands can be used to manipulate text data in various ways. 
+
+CONCATENATE: This command is used to combine two or more text strings into one. The syntax is:
+=CONCATENATE(text1, [text2], ...)
+
+LEFT: This command is used to extract a specified number of characters from the beginning of a text string. The syntax is:
+=LEFT(text, [num_chars])
+
+RIGHT: This command is used to extract a specified number of characters from the end of a text string. The syntax is:
+=RIGHT(text, [num_chars])
